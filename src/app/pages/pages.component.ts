@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { SettingsService } from '../services/settings.service';
 
 @Component({
   selector: 'app-pages',
@@ -6,6 +7,12 @@ import { Component } from '@angular/core';
   styles: [
   ]
 })
-export class PagesComponent {
+export class PagesComponent implements OnInit {
+  
+  constructor( private settingsService: SettingsService ) {}
+
+  ngOnInit(): void {
+
+  }
 
 }
